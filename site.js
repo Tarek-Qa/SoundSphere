@@ -4,8 +4,8 @@ const categories = [
         id: 1,
         name: 'Nature Sounds',
         products: [
-            { id: 101, name: 'Rainforest Ambience', price: 15, image: 'link-to-image' },
-            { id: 102, name: 'Ocean Waves', price: 20, image: 'link-to-image' }
+            { id: 101, name: 'Rainforest Ambience', price: 15, image: 'rf.jpg' },
+            { id: 102, name: 'Ocean Waves', price: 20, image: 'ow.jpg' }
             // More products
         ]
     },
@@ -13,8 +13,8 @@ const categories = [
         id: 2,
         name: 'Urban Sounds',
         products: [
-            { id: 201, name: 'City Traffic', price: 10, image: 'link-to-image' },
-            { id: 202, name: 'Subway Station', price: 12, image: 'link-to-image' }
+            { id: 201, name: 'City Traffic', price: 10, image: 'ct.jpg' },
+            { id: 202, name: 'Subway Station', price: 12, image: 'ss.jpg' }
             // More products
         ]
     }
