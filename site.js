@@ -1,4 +1,4 @@
-// Sample Categories
+
 const categories = [
     {
         id: 1,
@@ -6,7 +6,7 @@ const categories = [
         products: [
             { id: 101, name: 'Rainforest Ambience', price: 15, image: 'rf.jpg' },
             { id: 102, name: 'Ocean Waves', price: 20, image: 'ow.jpg' }
-            // More products
+            
         ]
     },
     {
@@ -15,16 +15,16 @@ const categories = [
         products: [
             { id: 201, name: 'City Traffic', price: 10, image: 'ct.jpg' },
             { id: 202, name: 'Subway Station', price: 12, image: 'ss.jpg' }
-            // More products
+            
         ]
     }
-    // More categories
+    
 ];
 
-// Shopping Cart
+
 let shoppingCart = [];
 
-// Display Categories and Their Products
+
 function displayCategories() {
     const categoriesContainer = document.getElementById('categories-container');
     categoriesContainer.innerHTML = '';
@@ -50,20 +50,20 @@ function displayCategories() {
     });
 }
 
-// Add Item to Cart
+
 function addToCart(productId) {
     let product = categories.flatMap(category => category.products).find(p => p.id === productId);
     shoppingCart.push(product);
     displayCart();
 }
 
-// Remove Item from Cart
+
 function removeFromCart(productId) {
     shoppingCart = shoppingCart.filter(item => item.id !== productId);
     displayCart();
 }
 
-// Display Shopping Cart
+
 function displayCart() {
     const cartContainer = document.getElementById('cart-container');
     cartContainer.innerHTML = '';
@@ -80,7 +80,7 @@ function displayCart() {
     });
 }
 
-// Initial Setup
+
 document.addEventListener('DOMContentLoaded', () => {
     displayCategories();
     displayCart();
